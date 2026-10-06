@@ -1,0 +1,739 @@
+[
+  {
+    "family": "dino_patch_temporal_ema",
+    "support": "matched_direct_vlm_stride32",
+    "scenes": [
+      "R01",
+      "R04"
+    ],
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "method": "mean of scene-macro scores across seeds",
+    "auroc_mean": 0.8263325234784009,
+    "auroc_std": 0.004981989458369953,
+    "auroc_seed_values": [
+      0.8210971391348098,
+      0.8310149873190427,
+      0.8268854439813502
+    ],
+    "average_precision_mean": 0.7436263666624914,
+    "average_precision_std": 0.00983772450516411,
+    "average_precision_seed_values": [
+      0.7344134908972177,
+      0.7539880641865112,
+      0.7424775449037455
+    ],
+    "frame_normal_fpr_mean": 0.38754885002242295,
+    "frame_normal_fpr_std": 0.009114457915748527,
+    "frame_normal_fpr_seed_values": [
+      0.3977993465308476,
+      0.38448971747069,
+      0.3803574860657313
+    ],
+    "frame_recall_mean": 0.5675990675990676,
+    "frame_recall_std": 0.014130950644501296,
+    "frame_recall_seed_values": [
+      0.5804195804195804,
+      0.5699300699300699,
+      0.5524475524475525
+    ],
+    "frame_f1_mean": 0.38979932716829063,
+    "frame_f1_std": 0.01929651815458488,
+    "frame_f1_seed_values": [
+      0.4058702791461412,
+      0.395129815034787,
+      0.36839788732394363
+    ],
+    "alarm_normal_fpr_mean": 0.23449612403100772,
+    "alarm_normal_fpr_std": 0.008880960649139225,
+    "alarm_normal_fpr_seed_values": [
+      0.2441860465116279,
+      0.22674418604651161,
+      0.23255813953488372
+    ],
+    "event_recall_overlap_mean": 0.5,
+    "event_recall_overlap_std": 0.0,
+    "event_recall_overlap_seed_values": [
+      0.5,
+      0.5,
+      0.5
+    ],
+    "per_scene_AUROC_mean": {
+      "R01": 0.8544027032399125,
+      "R04": 0.7982623437168891
+    }
+  },
+  {
+    "family": "dense_object_ema",
+    "support": "matched_direct_vlm_stride32",
+    "scenes": [
+      "R01",
+      "R04"
+    ],
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "method": "mean of scene-macro scores across seeds",
+    "auroc_mean": 0.8167411634642079,
+    "auroc_std": 0.004945619848331389,
+    "auroc_seed_values": [
+      0.812105778134992,
+      0.8219474644133495,
+      0.816170247844282
+    ],
+    "average_precision_mean": 0.6769196106406214,
+    "average_precision_std": 0.007338368949648918,
+    "average_precision_seed_values": [
+      0.6731788686131536,
+      0.6853745693904345,
+      0.6722053939182764
+    ],
+    "frame_normal_fpr_mean": 0.4292235248894869,
+    "frame_normal_fpr_std": 0.00598362101712783,
+    "frame_normal_fpr_seed_values": [
+      0.43422064193734383,
+      0.430857197770517,
+      0.4225927349605997
+    ],
+    "frame_recall_mean": 0.6655011655011654,
+    "frame_recall_std": 0.012279316728266597,
+    "frame_recall_seed_values": [
+      0.6538461538461539,
+      0.6783216783216783,
+      0.6643356643356644
+    ],
+    "frame_f1_mean": 0.5054173066488338,
+    "frame_f1_std": 0.01403191873961175,
+    "frame_f1_seed_values": [
+      0.4909471480900052,
+      0.5189655172413793,
+      0.5063392546151166
+    ],
+    "alarm_normal_fpr_mean": 0.25081683644051506,
+    "alarm_normal_fpr_std": 0.005983621017127853,
+    "alarm_normal_fpr_seed_values": [
+      0.2558139534883721,
+      0.2441860465116279,
+      0.2524505093215452
+    ],
+    "event_recall_overlap_mean": 0.5512820512820513,
+    "event_recall_overlap_std": 0.011102889792108212,
+    "event_recall_overlap_seed_values": [
+      0.5384615384615384,
+      0.5576923076923077,
+      0.5576923076923077
+    ],
+    "per_scene_AUROC_mean": {
+      "R01": 0.806400318028225,
+      "R04": 0.8270820089001907
+    }
+  },
+  {
+    "family": "dense_object_motion_ema",
+    "support": "matched_direct_vlm_stride32",
+    "scenes": [
+      "R01",
+      "R04"
+    ],
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "method": "mean of scene-macro scores across seeds",
+    "auroc_mean": 0.7790245183095462,
+    "auroc_std": 0.0042906636070047886,
+    "auroc_seed_values": [
+      0.7740752264584669,
+      0.7816945531244974,
+      0.7813037753456743
+    ],
+    "average_precision_mean": 0.623562392166882,
+    "average_precision_std": 0.0037084613383639355,
+    "average_precision_seed_values": [
+      0.6194512300117284,
+      0.6266554918219622,
+      0.6245804546669553
+    ],
+    "frame_normal_fpr_mean": 0.46966493689538086,
+    "frame_normal_fpr_std": 0.0009709426975608876,
+    "frame_normal_fpr_seed_values": [
+      0.47078608495098984,
+      0.4691043628675764,
+      0.4691043628675764
+    ],
+    "frame_recall_mean": 0.6724941724941725,
+    "frame_recall_std": 0.0040374144698575145,
+    "frame_recall_seed_values": [
+      0.6748251748251748,
+      0.6748251748251748,
+      0.6678321678321678
+    ],
+    "frame_f1_mean": 0.5010043079572024,
+    "frame_f1_std": 0.004245321921296708,
+    "frame_f1_seed_values": [
+      0.5032467532467532,
+      0.5036581796897864,
+      0.4961079909350675
+    ],
+    "alarm_normal_fpr_mean": 0.28376257287462364,
+    "alarm_normal_fpr_std": 0.004244769264173691,
+    "alarm_normal_fpr_seed_values": [
+      0.28488372093023256,
+      0.27906976744186046,
+      0.28733423025177784
+    ],
+    "event_recall_overlap_mean": 0.5448717948717948,
+    "event_recall_overlap_std": 0.011102889792108212,
+    "event_recall_overlap_seed_values": [
+      0.5384615384615384,
+      0.5576923076923077,
+      0.5384615384615384
+    ],
+    "per_scene_AUROC_mean": {
+      "R01": 0.7209302325581396,
+      "R04": 0.8371188040609528
+    }
+  },
+  {
+    "family": "vlm_dense_reference_object_ema",
+    "support": "matched_direct_vlm_stride32",
+    "scenes": [
+      "R01",
+      "R04"
+    ],
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "method": "mean of scene-macro scores across seeds",
+    "auroc_mean": 0.8169789080801958,
+    "auroc_std": 0.004772668699821524,
+    "auroc_seed_values": [
+      0.8128373804426082,
+      0.8221983506915278,
+      0.8159009931064515
+    ],
+    "average_precision_mean": 0.676704811060362,
+    "average_precision_std": 0.007713400200816761,
+    "average_precision_seed_values": [
+      0.6732144453037168,
+      0.6855464404312319,
+      0.671353547446137
+    ],
+    "frame_normal_fpr_mean": 0.4306009353578064,
+    "frame_normal_fpr_std": 0.007883193722770724,
+    "frame_normal_fpr_seed_values": [
+      0.4383528733423025,
+      0.430857197770517,
+      0.4225927349605997
+    ],
+    "frame_recall_mean": 0.6678321678321678,
+    "frame_recall_std": 0.010489510489510523,
+    "frame_recall_seed_values": [
+      0.6573426573426573,
+      0.6783216783216783,
+      0.6678321678321678
+    ],
+    "frame_f1_mean": 0.507623194340526,
+    "frame_f1_std": 0.012808069145642328,
+    "frame_f1_seed_values": [
+      0.49373251838806587,
+      0.5189655172413793,
+      0.510171547392133
+    ],
+    "alarm_normal_fpr_mean": 0.25081683644051506,
+    "alarm_normal_fpr_std": 0.005983621017127853,
+    "alarm_normal_fpr_seed_values": [
+      0.2558139534883721,
+      0.2441860465116279,
+      0.2524505093215452
+    ],
+    "event_recall_overlap_mean": 0.5448717948717948,
+    "event_recall_overlap_std": 0.011102889792108212,
+    "event_recall_overlap_seed_values": [
+      0.5384615384615384,
+      0.5576923076923077,
+      0.5384615384615384
+    ],
+    "per_scene_AUROC_mean": {
+      "R01": 0.8062015503875969,
+      "R04": 0.8277562657727947
+    }
+  },
+  {
+    "family": "vlm_dense_base_object_ema",
+    "support": "matched_direct_vlm_stride32",
+    "scenes": [
+      "R01",
+      "R04"
+    ],
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "method": "mean of scene-macro scores across seeds",
+    "auroc_mean": 0.8167385500654768,
+    "auroc_std": 0.00518712142020389,
+    "auroc_seed_values": [
+      0.8119383339448686,
+      0.8222410237593786,
+      0.8160362924921833
+    ],
+    "average_precision_mean": 0.6773230111843677,
+    "average_precision_std": 0.01040625906018084,
+    "average_precision_seed_values": [
+      0.671575379767801,
+      0.6893354141714413,
+      0.6710582396138607
+    ],
+    "frame_normal_fpr_mean": 0.43197834582612593,
+    "frame_normal_fpr_std": 0.005894470704558689,
+    "frame_normal_fpr_seed_values": [
+      0.4383528733423025,
+      0.430857197770517,
+      0.42672496636555834
+    ],
+    "frame_recall_mean": 0.6678321678321678,
+    "frame_recall_std": 0.01260682264148253,
+    "frame_recall_seed_values": [
+      0.6573426573426573,
+      0.6818181818181819,
+      0.6643356643356644
+    ],
+    "frame_f1_mean": 0.5071676646596012,
+    "frame_f1_std": 0.01455143539769881,
+    "frame_f1_seed_values": [
+      0.49373251838806587,
+      0.5226240538267451,
+      0.5051464217639924
+    ],
+    "alarm_normal_fpr_mean": 0.25081683644051506,
+    "alarm_normal_fpr_std": 0.005983621017127853,
+    "alarm_normal_fpr_seed_values": [
+      0.2558139534883721,
+      0.2441860465116279,
+      0.2524505093215452
+    ],
+    "event_recall_overlap_mean": 0.5576923076923077,
+    "event_recall_overlap_std": 0.0,
+    "event_recall_overlap_seed_values": [
+      0.5576923076923077,
+      0.5576923076923077,
+      0.5576923076923077
+    ],
+    "per_scene_AUROC_mean": {
+      "R01": 0.8056052474657126,
+      "R04": 0.8278718526652411
+    }
+  },
+  {
+    "family": "vlm_reference_full_ema",
+    "support": "matched_direct_vlm_stride32",
+    "scenes": [
+      "R01",
+      "R04"
+    ],
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "method": "mean of scene-macro scores across seeds",
+    "auroc_mean": 0.8087819082918065,
+    "auroc_std": 0.004030216871180351,
+    "auroc_seed_values": [
+      0.8048006193306982,
+      0.8128593329919489,
+      0.8086857725527724
+    ],
+    "average_precision_mean": 0.6739123114612022,
+    "average_precision_std": 0.005357067614858669,
+    "average_precision_seed_values": [
+      0.6686319361617318,
+      0.6793429114375882,
+      0.6737620867842868
+    ],
+    "frame_normal_fpr_mean": 0.445031712473573,
+    "frame_normal_fpr_std": 0.0029918105085639263,
+    "frame_normal_fpr_seed_values": [
+      0.4475302709975015,
+      0.4417163175091294,
+      0.44584854891408804
+    ],
+    "frame_recall_mean": 0.6538461538461539,
+    "frame_recall_std": 0.012606822641482468,
+    "frame_recall_seed_values": [
+      0.6643356643356644,
+      0.6573426573426573,
+      0.6398601398601399
+    ],
+    "frame_f1_mean": 0.48742064254260536,
+    "frame_f1_std": 0.014397228151017715,
+    "frame_f1_seed_values": [
+      0.4985786802030457,
+      0.4925141972121838,
+      0.4711690502125866
+    ],
+    "alarm_normal_fpr_mean": 0.27075725542955986,
+    "alarm_normal_fpr_std": 0.005742432525574308,
+    "alarm_normal_fpr_seed_values": [
+      0.277388045358447,
+      0.26744186046511625,
+      0.26744186046511625
+    ],
+    "event_recall_overlap_mean": 0.5512820512820512,
+    "event_recall_overlap_std": 0.011102889792108212,
+    "event_recall_overlap_seed_values": [
+      0.5576923076923077,
+      0.5576923076923077,
+      0.5384615384615384
+    ],
+    "per_scene_AUROC_mean": {
+      "R01": 0.8168356191612007,
+      "R04": 0.8007281974224124
+    }
+  },
+  {
+    "family": "vlm_reference_no_phase_ema",
+    "support": "matched_direct_vlm_stride32",
+    "scenes": [
+      "R01",
+      "R04"
+    ],
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "method": "mean of scene-macro scores across seeds",
+    "auroc_mean": 0.8083071284109149,
+    "auroc_std": 0.004384900227520112,
+    "auroc_seed_values": [
+      0.8043698565512905,
+      0.8130327133306184,
+      0.8075188153508355
+    ],
+    "average_precision_mean": 0.6708613320383602,
+    "average_precision_std": 0.006678492979025256,
+    "average_precision_seed_values": [
+      0.664725013875519,
+      0.6779744222717509,
+      0.6698845599678103
+    ],
+    "frame_normal_fpr_mean": 0.4450317124735729,
+    "frame_normal_fpr_std": 0.006565181100884214,
+    "frame_normal_fpr_seed_values": [
+      0.4475302709975015,
+      0.4499807803190467,
+      0.43758408610417066
+    ],
+    "frame_recall_mean": 0.6386946386946387,
+    "frame_recall_std": 0.0271589281998393,
+    "frame_recall_seed_values": [
+      0.6468531468531469,
+      0.6608391608391608,
+      0.6083916083916083
+    ],
+    "frame_f1_mean": 0.46892846247712017,
+    "frame_f1_std": 0.03123107111956665,
+    "frame_f1_seed_values": [
+      0.47875,
+      0.4940681987661853,
+      0.43396718866517525
+    ],
+    "alarm_normal_fpr_mean": 0.2693798449612403,
+    "alarm_normal_fpr_std": 0.003356687611567598,
+    "alarm_normal_fpr_seed_values": [
+      0.27325581395348836,
+      0.26744186046511625,
+      0.26744186046511625
+    ],
+    "event_recall_overlap_mean": 0.5512820512820512,
+    "event_recall_overlap_std": 0.011102889792108212,
+    "event_recall_overlap_seed_values": [
+      0.5576923076923077,
+      0.5576923076923077,
+      0.5384615384615384
+    ],
+    "per_scene_AUROC_mean": {
+      "R01": 0.8141522560127212,
+      "R04": 0.8024620008091082
+    }
+  },
+  {
+    "family": "vlm_reference_full_process_removed_ema",
+    "support": "matched_direct_vlm_stride32",
+    "scenes": [
+      "R01",
+      "R04"
+    ],
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "method": "mean of scene-macro scores across seeds",
+    "auroc_mean": 0.8078171534831154,
+    "auroc_std": 0.004145639742166608,
+    "auroc_seed_values": [
+      0.803929125522437,
+      0.8121795879820097,
+      0.8073427469448995
+    ],
+    "average_precision_mean": 0.6738811820784566,
+    "average_precision_std": 0.005706719815719913,
+    "average_precision_seed_values": [
+      0.6685216226919678,
+      0.6798810511443166,
+      0.6732408723990855
+    ],
+    "frame_normal_fpr_mean": 0.445031712473573,
+    "frame_normal_fpr_std": 0.0029918105085639263,
+    "frame_normal_fpr_seed_values": [
+      0.4475302709975015,
+      0.4417163175091294,
+      0.44584854891408804
+    ],
+    "frame_recall_mean": 0.6596736596736598,
+    "frame_recall_std": 0.01724784217593092,
+    "frame_recall_seed_values": [
+      0.6678321678321678,
+      0.6713286713286714,
+      0.6398601398601399
+    ],
+    "frame_f1_mean": 0.49385647161955887,
+    "frame_f1_std": 0.019843012873425273,
+    "frame_f1_seed_values": [
+      0.5024242424242424,
+      0.5079761222218475,
+      0.4711690502125866
+    ],
+    "alarm_normal_fpr_mean": 0.2721346658978794,
+    "alarm_normal_fpr_std": 0.0049967320233895865,
+    "alarm_normal_fpr_seed_values": [
+      0.277388045358447,
+      0.2715740918700749,
+      0.26744186046511625
+    ],
+    "event_recall_overlap_mean": 0.5576923076923076,
+    "event_recall_overlap_std": 0.019230769230769218,
+    "event_recall_overlap_seed_values": [
+      0.5576923076923077,
+      0.5769230769230769,
+      0.5384615384615384
+    ],
+    "per_scene_AUROC_mean": {
+      "R01": 0.8167362353408866,
+      "R04": 0.7988980716253443
+    }
+  },
+  {
+    "family": "dino_patch_temporal_ema",
+    "support": "dense_visual_stride8",
+    "scenes": [
+      "R01",
+      "R04"
+    ],
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "method": "mean of scene-macro scores across seeds",
+    "auroc_mean": 0.8085455340980294,
+    "auroc_std": 0.005876515393026429,
+    "auroc_seed_values": [
+      0.8032695890895603,
+      0.8148790087826426,
+      0.8074880044218851
+    ],
+    "average_precision_mean": 0.7204315767950176,
+    "average_precision_std": 0.012673922060500987,
+    "average_precision_seed_values": [
+      0.711681562920607,
+      0.7349656310937558,
+      0.7146475363706897
+    ],
+    "frame_normal_fpr_mean": 0.40171419303886724,
+    "frame_normal_fpr_std": 0.010231567665143576,
+    "frame_normal_fpr_seed_values": [
+      0.41194576070401084,
+      0.4017141930388673,
+      0.3914826253737237
+    ],
+    "frame_recall_mean": 0.5796847635726795,
+    "frame_recall_std": 0.00926707989865005,
+    "frame_recall_seed_values": [
+      0.5831873905429071,
+      0.5866900175131349,
+      0.5691768826619965
+    ],
+    "frame_f1_mean": 0.4159772840303792,
+    "frame_f1_std": 0.011600746709251592,
+    "frame_f1_seed_values": [
+      0.41827771263165675,
+      0.42625547055400403,
+      0.40339866890547676
+    ],
+    "alarm_normal_fpr_mean": 0.3543100449408623,
+    "alarm_normal_fpr_std": 0.010580084763478846,
+    "alarm_normal_fpr_seed_values": [
+      0.3614472273932419,
+      0.3593282845377109,
+      0.34215462289163423
+    ],
+    "event_recall_overlap_mean": 0.6538461538461539,
+    "event_recall_overlap_std": 0.019230769230769273,
+    "event_recall_overlap_seed_values": [
+      0.6730769230769231,
+      0.6538461538461539,
+      0.6346153846153846
+    ],
+    "per_scene_AUROC_mean": {
+      "R01": 0.8362894582166441,
+      "R04": 0.7808016099794144
+    }
+  },
+  {
+    "family": "dense_object_ema",
+    "support": "dense_visual_stride8",
+    "scenes": [
+      "R01",
+      "R04"
+    ],
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "method": "mean of scene-macro scores across seeds",
+    "auroc_mean": 0.7995405336342362,
+    "auroc_std": 0.005558643944444817,
+    "auroc_seed_values": [
+      0.7949602415186467,
+      0.8057248054736428,
+      0.7979365539104186
+    ],
+    "average_precision_mean": 0.6679765045431262,
+    "average_precision_std": 0.007830998394271699,
+    "average_precision_seed_values": [
+      0.663096035545998,
+      0.6770091818838496,
+      0.6638242961995307
+    ],
+    "frame_normal_fpr_mean": 0.4348486771591358,
+    "frame_normal_fpr_std": 0.006112887626513232,
+    "frame_normal_fpr_seed_values": [
+      0.4418401308738083,
+      0.43219382862300443,
+      0.4305120719805946
+    ],
+    "frame_recall_mean": 0.6506129597197899,
+    "frame_recall_std": 0.004633539949325035,
+    "frame_recall_seed_values": [
+      0.6471103327495622,
+      0.6558669001751314,
+      0.648861646234676
+    ],
+    "frame_f1_mean": 0.49931869311420646,
+    "frame_f1_std": 0.006523310826217734,
+    "frame_f1_seed_values": [
+      0.493209667498324,
+      0.5061894132872968,
+      0.4985569985569986
+    ],
+    "alarm_normal_fpr_mean": 0.3803543558789793,
+    "alarm_normal_fpr_std": 0.008133039524588371,
+    "alarm_normal_fpr_seed_values": [
+      0.38965984092062955,
+      0.3767981045862244,
+      0.37460512213008407
+    ],
+    "event_recall_overlap_mean": 0.7692307692307692,
+    "event_recall_overlap_std": 0.0,
+    "event_recall_overlap_seed_values": [
+      0.7692307692307692,
+      0.7692307692307692,
+      0.7692307692307692
+    ],
+    "per_scene_AUROC_mean": {
+      "R01": 0.7864536873768282,
+      "R04": 0.8126273798916439
+    }
+  },
+  {
+    "family": "dense_object_motion_ema",
+    "support": "dense_visual_stride8",
+    "scenes": [
+      "R01",
+      "R04"
+    ],
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "method": "mean of scene-macro scores across seeds",
+    "auroc_mean": 0.7729237525088001,
+    "auroc_std": 0.00473483013236811,
+    "auroc_seed_values": [
+      0.7685815155262035,
+      0.7779719093857667,
+      0.7722178326144301
+    ],
+    "average_precision_mean": 0.6332673905852765,
+    "average_precision_std": 0.004926221353939748,
+    "average_precision_seed_values": [
+      0.6291486202640619,
+      0.6387244889634499,
+      0.6319290625283177
+    ],
+    "frame_normal_fpr_mean": 0.472653532276565,
+    "frame_normal_fpr_std": 0.0036756372233916323,
+    "frame_normal_fpr_seed_values": [
+      0.4755281491510126,
+      0.473920432109212,
+      0.4685120155694703
+    ],
+    "frame_recall_mean": 0.6643315820198482,
+    "frame_recall_std": 0.0013375877685218652,
+    "frame_recall_seed_values": [
+      0.6646234676007006,
+      0.6654991243432574,
+      0.6628721541155866
+    ],
+    "frame_f1_mean": 0.5035652993571987,
+    "frame_f1_std": 0.0008104479221205662,
+    "frame_f1_seed_values": [
+      0.5030837996569706,
+      0.5045009911930064,
+      0.5031111072216193
+    ],
+    "alarm_normal_fpr_mean": 0.4164057652169008,
+    "alarm_normal_fpr_std": 0.0033351269606805,
+    "alarm_normal_fpr_seed_values": [
+      0.4174282168443617,
+      0.4191099734867716,
+      0.41267910531956903
+    ],
+    "event_recall_overlap_mean": 0.7820512820512819,
+    "event_recall_overlap_std": 0.011102889792108212,
+    "event_recall_overlap_seed_values": [
+      0.7692307692307692,
+      0.7884615384615384,
+      0.7884615384615384
+    ],
+    "per_scene_AUROC_mean": {
+      "R01": 0.7225599004252671,
+      "R04": 0.8232876045923331
+    }
+  }
+]

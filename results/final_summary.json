@@ -1,0 +1,18 @@
+{
+  "scenes": [
+    "R01",
+    "R04"
+  ],
+  "normal_only_gradient_heads": 24,
+  "new_DINO_object_crops": 6490,
+  "epochs_executed_range": [
+    22,
+    40
+  ],
+  "fresh_paid_api_calls": 0,
+  "human_phase_accuracy_verified": false,
+  "metrics_rows": 428,
+  "separate_metric_support_groups": true,
+  "new_public_repository": "https://github.com/b-jongwon/ipad-vlm-process-ad",
+  "full16_scenes_complete": false
+}

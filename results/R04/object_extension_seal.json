@@ -1,0 +1,159 @@
+{
+  "test_labels_used_for_fit": false,
+  "candidate_weights_fixed_before_metrics": true,
+  "new_crop_features": true,
+  "normal_fit_only": true,
+  "fresh_paid_api_calls": 0,
+  "object_source": "38692f2522a14c12c2bac43bd7b9f0ccf172ba72d9e8130d94d1cd7bf849e097",
+  "object_detail": {
+    "dense_object_clip": {
+      "classes": {
+        "0": {
+          "fit": 528,
+          "cal": 149,
+          "scaling": {
+            "center": 0.0184212327003479,
+            "scale": 0.012028813362121582,
+            "normal_n": 149
+          }
+        },
+        "1": {
+          "fit": 717,
+          "cal": 204,
+          "scaling": {
+            "center": 0.02435445785522461,
+            "scale": 0.01255793683230877,
+            "normal_n": 204
+          }
+        }
+      },
+      "normal_scale": {
+        "center": 0.17602142691612244,
+        "scale": 1.007758729159832,
+        "normal_n": 248
+      },
+      "covered_observations": 2125,
+      "total_observations": 2255,
+      "absence_is_normal_certification": false
+    },
+    "dense_object_dino": {
+      "classes": {
+        "0": {
+          "fit": 528,
+          "cal": 149,
+          "scaling": {
+            "center": 0.052739500999450684,
+            "scale": 0.03982257843017578,
+            "normal_n": 149
+          }
+        },
+        "1": {
+          "fit": 717,
+          "cal": 204,
+          "scaling": {
+            "center": 0.11158061027526855,
+            "scale": 0.07432371377944946,
+            "normal_n": 204
+          }
+        }
+      },
+      "normal_scale": {
+        "center": 0.10378342866897583,
+        "scale": 0.974473413079977,
+        "normal_n": 248
+      },
+      "covered_observations": 2125,
+      "total_observations": 2255,
+      "absence_is_normal_certification": false
+    },
+    "dense_object_motion": {
+      "classes": {
+        "0": {
+          "fit": 528,
+          "cal": 149,
+          "scaling": {
+            "center": 0.20789003372192383,
+            "scale": 0.38996195793151855,
+            "normal_n": 149
+          }
+        },
+        "1": {
+          "fit": 717,
+          "cal": 204,
+          "scaling": {
+            "center": 0.22971200942993164,
+            "scale": 0.5388985872268677,
+            "normal_n": 204
+          }
+        }
+      },
+      "normal_scale": {
+        "center": 0.19583489745855331,
+        "scale": 1.3097792565822601,
+        "normal_n": 248
+      },
+      "covered_observations": 2125,
+      "total_observations": 2255,
+      "absence_is_normal_certification": false
+    }
+  },
+  "tracking_ground_truth_available": false,
+  "sparse_vlm_evidence_reused": true,
+  "tracker_stride": 4,
+  "visual_stride": 8,
+  "semantic_stride": 32,
+  "development_tests_previously_inspected": true,
+  "candidate_names": [
+    "dense_object_clip",
+    "dense_object_dino",
+    "dense_object_ema_s0",
+    "dense_object_ema_s1",
+    "dense_object_ema_s2",
+    "dense_object_motion",
+    "dense_object_motion_ema_s0",
+    "dense_object_motion_ema_s1",
+    "dense_object_motion_ema_s2",
+    "dense_object_motion_s0",
+    "dense_object_motion_s1",
+    "dense_object_motion_s2",
+    "dense_object_s0",
+    "dense_object_s1",
+    "dense_object_s2",
+    "vlm_base_full_process_removed_ema_s0",
+    "vlm_base_full_process_removed_ema_s1",
+    "vlm_base_full_process_removed_ema_s2",
+    "vlm_base_full_process_removed_s0",
+    "vlm_base_full_process_removed_s1",
+    "vlm_base_full_process_removed_s2",
+    "vlm_dense_base_object_ema_s0",
+    "vlm_dense_base_object_ema_s1",
+    "vlm_dense_base_object_ema_s2",
+    "vlm_dense_base_object_motion_ema_s0",
+    "vlm_dense_base_object_motion_ema_s1",
+    "vlm_dense_base_object_motion_ema_s2",
+    "vlm_dense_base_object_motion_s0",
+    "vlm_dense_base_object_motion_s1",
+    "vlm_dense_base_object_motion_s2",
+    "vlm_dense_base_object_s0",
+    "vlm_dense_base_object_s1",
+    "vlm_dense_base_object_s2",
+    "vlm_dense_reference_object_ema_s0",
+    "vlm_dense_reference_object_ema_s1",
+    "vlm_dense_reference_object_ema_s2",
+    "vlm_dense_reference_object_motion_ema_s0",
+    "vlm_dense_reference_object_motion_ema_s1",
+    "vlm_dense_reference_object_motion_ema_s2",
+    "vlm_dense_reference_object_motion_s0",
+    "vlm_dense_reference_object_motion_s1",
+    "vlm_dense_reference_object_motion_s2",
+    "vlm_dense_reference_object_s0",
+    "vlm_dense_reference_object_s1",
+    "vlm_dense_reference_object_s2",
+    "vlm_reference_full_process_removed_ema_s0",
+    "vlm_reference_full_process_removed_ema_s1",
+    "vlm_reference_full_process_removed_ema_s2",
+    "vlm_reference_full_process_removed_s0",
+    "vlm_reference_full_process_removed_s1",
+    "vlm_reference_full_process_removed_s2"
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "version": "vlm-refinement-v1",
+  "scene": "R04",
+  "dense_stride": 8,
+  "counts": {
+    "fit": 822,
+    "tune": 158,
+    "cal": 248,
+    "test": 1027
+  },
+  "normal_clips": {
+    "fit": [
+      "01",
+      "02",
+      "06",
+      "08",
+      "09",
+      "10",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "21",
+      "22",
+      "23",
+      "24"
+    ],
+    "tune": [
+      "03",
+      "04",
+      "07"
+    ],
+    "cal": [
+      "05",
+      "11",
+      "12",
+      "20",
+      "25"
+    ]
+  },
+  "protected_teacher_clips": [
+    "01",
+    "13",
+    "24"
+  ],
+  "same_dense_cadence_for_all_splits": true,
+  "normal_split_disjoint": true,
+  "selection_uses_anomaly_values": false,
+  "records_sha256": "4a397987db787a95fc70dc2e8f7d1fe09908e3b3d0e2a92e89aaa2a57589955d",
+  "source_clip_cache": "R04_clip_30a7ed651b3da6bd",
+  "source_dino_cache": "R04_dino_144d5f4808a779d6",
+  "source_patches": "frozen DINOv2-S/14 intermediate layers4,7,10 averaged;224px;not exact SubspaceAD",
+  "vlm_reference_source": {
+    "mentor_direct_20261005": "af6a45f26b5f2936bffdf32a3d2ef941fe6b52ab7293840c0361bc9944617ee3",
+    "mentor_direct_reference_20261005": "668a68670fab1768acfc779ed5605e1e9c81b66d8d41b20fcd1d637c92d424b5"
+  },
+  "vlm_cadence": "original sparse evidence; not regenerated at dense stride8",
+  "phase_labels_human_verified": false,
+  "test_previously_inspected": true,
+  "max_epochs": 40,
+  "early_stop": "normal tune only;cal/test not used",
+  "seed_list": [
+    0,
+    1,
+    2
+  ],
+  "test_anomaly_labels_used_for_fit": false
+}

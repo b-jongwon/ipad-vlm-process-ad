@@ -1,0 +1,21 @@
+{
+  "scenes": [
+    "R01",
+    "R04"
+  ],
+  "fresh_paid_api_calls": 0,
+  "metric_rows": 296,
+  "trainable_heads": 24,
+  "max_epochs": 40,
+  "patience": 6,
+  "VLM_weight_updates": 0,
+  "head_seed_list": [
+    0,
+    1,
+    2
+  ],
+  "same_evaluation_within_support": true,
+  "all16_evaluated": false,
+  "human_verified_phase_objects": false,
+  "selection_of_best_test_row_is_exploratory": true
+}

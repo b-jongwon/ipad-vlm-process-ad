@@ -1,0 +1,244 @@
+{
+  "verified": true,
+  "checkpoint_replays": [
+    {
+      "scene": "R01",
+      "head": "clip_dae_s0",
+      "best_epoch": 40,
+      "epochs_executed": 40,
+      "max_abs_score_replay_difference": 0.0,
+      "normal_tune_selection_verified": true
+    },
+    {
+      "scene": "R01",
+      "head": "clip_dae_s1",
+      "best_epoch": 40,
+      "epochs_executed": 40,
+      "max_abs_score_replay_difference": 0.0,
+      "normal_tune_selection_verified": true
+    },
+    {
+      "scene": "R01",
+      "head": "clip_dae_s2",
+      "best_epoch": 40,
+      "epochs_executed": 40,
+      "max_abs_score_replay_difference": 0.0,
+      "normal_tune_selection_verified": true
+    },
+    {
+      "scene": "R01",
+      "head": "clip_gru_s0",
+      "best_epoch": 16,
+      "epochs_executed": 22,
+      "max_abs_score_replay_difference": 0.0,
+      "normal_tune_selection_verified": true
+    },
+    {
+      "scene": "R01",
+      "head": "clip_gru_s1",
+      "best_epoch": 17,
+      "epochs_executed": 23,
+      "max_abs_score_replay_difference": 0.0,
+      "normal_tune_selection_verified": true
+    },
+    {
+      "scene": "R01",
+      "head": "clip_gru_s2",
+      "best_epoch": 16,
+      "epochs_executed": 22,
+      "max_abs_score_replay_difference": 0.0,
+      "normal_tune_selection_verified": true
+    },
+    {
+      "scene": "R01",
+      "head": "dino_dae_s0",
+      "best_epoch": 40,
+      "epochs_executed": 40,
+      "max_abs_score_replay_difference": 0.0,
+      "normal_tune_selection_verified": true
+    },
+    {
+      "scene": "R01",
+      "head": "dino_dae_s1",
+      "best_epoch": 40,
+      "epochs_executed": 40,
+      "max_abs_score_replay_difference": 0.0,
+      "normal_tune_selection_verified": true
+    },
+    {
+      "scene": "R01",
+      "head": "dino_dae_s2",
+      "best_epoch": 40,
+      "epochs_executed": 40,
+      "max_abs_score_replay_difference": 0.0,
+      "normal_tune_selection_verified": true
+    },
+    {
+      "scene": "R01",
+      "head": "dino_gru_s0",
+      "best_epoch": 37,
+      "epochs_executed": 40,
+      "max_abs_score_replay_difference": 0.0,
+      "normal_tune_selection_verified": true
+    },
+    {
+      "scene": "R01",
+      "head": "dino_gru_s1",
+      "best_epoch": 36,
+      "epochs_executed": 40,
+      "max_abs_score_replay_difference": 0.0,
+      "normal_tune_selection_verified": true
+    },
+    {
+      "scene": "R01",
+      "head": "dino_gru_s2",
+      "best_epoch": 31,
+      "epochs_executed": 37,
+      "max_abs_score_replay_difference": 0.0,
+      "normal_tune_selection_verified": true
+    },
+    {
+      "scene": "R04",
+      "head": "clip_dae_s0",
+      "best_epoch": 40,
+      "epochs_executed": 40,
+      "max_abs_score_replay_difference": 0.0,
+      "normal_tune_selection_verified": true
+    },
+    {
+      "scene": "R04",
+      "head": "clip_dae_s1",
+      "best_epoch": 40,
+      "epochs_executed": 40,
+      "max_abs_score_replay_difference": 0.0,
+      "normal_tune_selection_verified": true
+    },
+    {
+      "scene": "R04",
+      "head": "clip_dae_s2",
+      "best_epoch": 39,
+      "epochs_executed": 40,
+      "max_abs_score_replay_difference": 0.0,
+      "normal_tune_selection_verified": true
+    },
+    {
+      "scene": "R04",
+      "head": "clip_gru_s0",
+      "best_epoch": 17,
+      "epochs_executed": 23,
+      "max_abs_score_replay_difference": 0.0,
+      "normal_tune_selection_verified": true
+    },
+    {
+      "scene": "R04",
+      "head": "clip_gru_s1",
+      "best_epoch": 16,
+      "epochs_executed": 22,
+      "max_abs_score_replay_difference": 0.0,
+      "normal_tune_selection_verified": true
+    },
+    {
+      "scene": "R04",
+      "head": "clip_gru_s2",
+      "best_epoch": 16,
+      "epochs_executed": 22,
+      "max_abs_score_replay_difference": 0.0,
+      "normal_tune_selection_verified": true
+    },
+    {
+      "scene": "R04",
+      "head": "dino_dae_s0",
+      "best_epoch": 40,
+      "epochs_executed": 40,
+      "max_abs_score_replay_difference": 0.0,
+      "normal_tune_selection_verified": true
+    },
+    {
+      "scene": "R04",
+      "head": "dino_dae_s1",
+      "best_epoch": 40,
+      "epochs_executed": 40,
+      "max_abs_score_replay_difference": 0.0,
+      "normal_tune_selection_verified": true
+    },
+    {
+      "scene": "R04",
+      "head": "dino_dae_s2",
+      "best_epoch": 40,
+      "epochs_executed": 40,
+      "max_abs_score_replay_difference": 0.0,
+      "normal_tune_selection_verified": true
+    },
+    {
+      "scene": "R04",
+      "head": "dino_gru_s0",
+      "best_epoch": 23,
+      "epochs_executed": 29,
+      "max_abs_score_replay_difference": 0.0,
+      "normal_tune_selection_verified": true
+    },
+    {
+      "scene": "R04",
+      "head": "dino_gru_s1",
+      "best_epoch": 20,
+      "epochs_executed": 26,
+      "max_abs_score_replay_difference": 0.0,
+      "normal_tune_selection_verified": true
+    },
+    {
+      "scene": "R04",
+      "head": "dino_gru_s2",
+      "best_epoch": 25,
+      "epochs_executed": 31,
+      "max_abs_score_replay_difference": 0.0,
+      "normal_tune_selection_verified": true
+    }
+  ],
+  "gradient_heads": 24,
+  "dense_object_model_replays": [
+    {
+      "scene": "R01",
+      "method": "dense_object_clip",
+      "saved_object_model_replay_verified": true,
+      "max_abs_score_replay_difference": 0.0
+    },
+    {
+      "scene": "R01",
+      "method": "dense_object_dino",
+      "saved_object_model_replay_verified": true,
+      "max_abs_score_replay_difference": 0.0
+    },
+    {
+      "scene": "R01",
+      "method": "dense_object_motion",
+      "saved_object_model_replay_verified": true,
+      "max_abs_score_replay_difference": 0.0
+    },
+    {
+      "scene": "R04",
+      "method": "dense_object_clip",
+      "saved_object_model_replay_verified": true,
+      "max_abs_score_replay_difference": 0.0
+    },
+    {
+      "scene": "R04",
+      "method": "dense_object_dino",
+      "saved_object_model_replay_verified": true,
+      "max_abs_score_replay_difference": 0.0
+    },
+    {
+      "scene": "R04",
+      "method": "dense_object_motion",
+      "saved_object_model_replay_verified": true,
+      "max_abs_score_replay_difference": 0.0
+    }
+  ],
+  "normal_recordings_disjoint": true,
+  "causal_GRU_context_verified": true,
+  "all_scores_finite": true,
+  "fresh_api_calls_in_verifier": 0,
+  "existing_ledger_sha256": "529af4be277c668b2db4544c7d2f8184ccd9413b395f38fdcd91a06b8eb38b49",
+  "budget_limit_usd": 4.0,
+  "conservative_reserved_usd": 3.885056100000002,
+  "human_semantic_or_box_accuracy_verified": false
+}

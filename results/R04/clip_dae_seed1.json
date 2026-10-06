@@ -1,0 +1,219 @@
+{
+  "scene": "R04",
+  "encoder": "clip",
+  "kind": "dae",
+  "seed": 1,
+  "max_epochs": 40,
+  "epochs_executed": 40,
+  "best_epoch": 40,
+  "selection": "normal TUNE only",
+  "fit_observations": 822,
+  "tune_observations": 158,
+  "history": [
+    {
+      "epoch": 1,
+      "normal_fit_loss": 0.8618964297430856,
+      "normal_tune_loss": 0.6731615662574768
+    },
+    {
+      "epoch": 2,
+      "normal_fit_loss": 0.7440509029797145,
+      "normal_tune_loss": 0.557285487651825
+    },
+    {
+      "epoch": 3,
+      "normal_fit_loss": 0.6359950985227313,
+      "normal_tune_loss": 0.48477667570114136
+    },
+    {
+      "epoch": 4,
+      "normal_fit_loss": 0.5603355169296265,
+      "normal_tune_loss": 0.4344058930873871
+    },
+    {
+      "epoch": 5,
+      "normal_fit_loss": 0.4956653927053724,
+      "normal_tune_loss": 0.3976622223854065
+    },
+    {
+      "epoch": 6,
+      "normal_fit_loss": 0.4464596765381949,
+      "normal_tune_loss": 0.37026137113571167
+    },
+    {
+      "epoch": 7,
+      "normal_fit_loss": 0.41082880752427237,
+      "normal_tune_loss": 0.350066214799881
+    },
+    {
+      "epoch": 8,
+      "normal_fit_loss": 0.3831870343003954,
+      "normal_tune_loss": 0.32911208271980286
+    },
+    {
+      "epoch": 9,
+      "normal_fit_loss": 0.359845689364842,
+      "normal_tune_loss": 0.3128579556941986
+    },
+    {
+      "epoch": 10,
+      "normal_fit_loss": 0.3385340997150966,
+      "normal_tune_loss": 0.29844897985458374
+    },
+    {
+      "epoch": 11,
+      "normal_fit_loss": 0.32073479890823364,
+      "normal_tune_loss": 0.28413987159729004
+    },
+    {
+      "epoch": 12,
+      "normal_fit_loss": 0.3041149377822876,
+      "normal_tune_loss": 0.27170243859291077
+    },
+    {
+      "epoch": 13,
+      "normal_fit_loss": 0.2888469823769161,
+      "normal_tune_loss": 0.26141244173049927
+    },
+    {
+      "epoch": 14,
+      "normal_fit_loss": 0.27466762491634916,
+      "normal_tune_loss": 0.2510251998901367
+    },
+    {
+      "epoch": 15,
+      "normal_fit_loss": 0.26122591538088663,
+      "normal_tune_loss": 0.24146492779254913
+    },
+    {
+      "epoch": 16,
+      "normal_fit_loss": 0.2493758499622345,
+      "normal_tune_loss": 0.23388271033763885
+    },
+    {
+      "epoch": 17,
+      "normal_fit_loss": 0.2387859502008983,
+      "normal_tune_loss": 0.22835673391819
+    },
+    {
+      "epoch": 18,
+      "normal_fit_loss": 0.22936191942010606,
+      "normal_tune_loss": 0.22085359692573547
+    },
+    {
+      "epoch": 19,
+      "normal_fit_loss": 0.2209930739232472,
+      "normal_tune_loss": 0.21719607710838318
+    },
+    {
+      "epoch": 20,
+      "normal_fit_loss": 0.2139507851430348,
+      "normal_tune_loss": 0.21344922482967377
+    },
+    {
+      "epoch": 21,
+      "normal_fit_loss": 0.20720853124346053,
+      "normal_tune_loss": 0.20794598758220673
+    },
+    {
+      "epoch": 22,
+      "normal_fit_loss": 0.20149463628019607,
+      "normal_tune_loss": 0.20541220903396606
+    },
+    {
+      "epoch": 23,
+      "normal_fit_loss": 0.19612805119582585,
+      "normal_tune_loss": 0.20182405412197113
+    },
+    {
+      "epoch": 24,
+      "normal_fit_loss": 0.19144256838730403,
+      "normal_tune_loss": 0.1997901350259781
+    },
+    {
+      "epoch": 25,
+      "normal_fit_loss": 0.18738687251295363,
+      "normal_tune_loss": 0.19566908478736877
+    },
+    {
+      "epoch": 26,
+      "normal_fit_loss": 0.18322545715740748,
+      "normal_tune_loss": 0.1939813494682312
+    },
+    {
+      "epoch": 27,
+      "normal_fit_loss": 0.17964563838073186,
+      "normal_tune_loss": 0.1906731128692627
+    },
+    {
+      "epoch": 28,
+      "normal_fit_loss": 0.1764147984130042,
+      "normal_tune_loss": 0.19034171104431152
+    },
+    {
+      "epoch": 29,
+      "normal_fit_loss": 0.17343673748629435,
+      "normal_tune_loss": 0.1874035745859146
+    },
+    {
+      "epoch": 30,
+      "normal_fit_loss": 0.17042578331061772,
+      "normal_tune_loss": 0.18560898303985596
+    },
+    {
+      "epoch": 31,
+      "normal_fit_loss": 0.16760189831256866,
+      "normal_tune_loss": 0.1845327913761139
+    },
+    {
+      "epoch": 32,
+      "normal_fit_loss": 0.1654476672410965,
+      "normal_tune_loss": 0.18212756514549255
+    },
+    {
+      "epoch": 33,
+      "normal_fit_loss": 0.16294421681335994,
+      "normal_tune_loss": 0.18153738975524902
+    },
+    {
+      "epoch": 34,
+      "normal_fit_loss": 0.1606124894959586,
+      "normal_tune_loss": 0.17973056435585022
+    },
+    {
+      "epoch": 35,
+      "normal_fit_loss": 0.15853214263916016,
+      "normal_tune_loss": 0.17788957059383392
+    },
+    {
+      "epoch": 36,
+      "normal_fit_loss": 0.15683083874838694,
+      "normal_tune_loss": 0.17701834440231323
+    },
+    {
+      "epoch": 37,
+      "normal_fit_loss": 0.15457169072968618,
+      "normal_tune_loss": 0.17696361243724823
+    },
+    {
+      "epoch": 38,
+      "normal_fit_loss": 0.15286263397761754,
+      "normal_tune_loss": 0.17421823740005493
+    },
+    {
+      "epoch": 39,
+      "normal_fit_loss": 0.15090681186744145,
+      "normal_tune_loss": 0.17319880425930023
+    },
+    {
+      "epoch": 40,
+      "normal_fit_loss": 0.14899408178670065,
+      "normal_tune_loss": 0.1714531034231186
+    }
+  ],
+  "cal_test_used_for_stopping": false,
+  "context_observations": null,
+  "cold_start": null,
+  "wall_seconds_this_execution": 0.7543251999995846,
+  "pretrained_backbone_weights_updated": false
+}

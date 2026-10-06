@@ -1,0 +1,9 @@
+{
+  "matched_test_n": 125,
+  "dense_test_n": 466,
+  "all_methods_same_support_within_group": true,
+  "point_adjustment": false,
+  "vlm_dense_inference_claimed": false,
+  "calibration": "normal dense visual;VLM evidence only at cached sites",
+  "test_is_independent_final_holdout": false
+}

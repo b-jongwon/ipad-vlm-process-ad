@@ -1,0 +1,934 @@
+{
+  "version": "vlm-refinement-v1",
+  "scene": "R04",
+  "records_sha256": "4a397987db787a95fc70dc2e8f7d1fe09908e3b3d0e2a92e89aaa2a57589955d",
+  "test_labels_used_for_fit": false,
+  "checkpoint_stopping": "normal TUNE only",
+  "normal_calibration_scales": {
+    "clip_pca95": {
+      "center": 0.005732471123337746,
+      "scale": 0.0037848064675927162,
+      "normal_n": 248
+    },
+    "clip_pca99": {
+      "center": 0.005732471123337746,
+      "scale": 0.0037848064675927162,
+      "normal_n": 248
+    },
+    "clip_memory64": {
+      "center": 0.016192883253097534,
+      "scale": 0.00939515233039856,
+      "normal_n": 248
+    },
+    "dino_pca95": {
+      "center": 0.012511864304542542,
+      "scale": 0.006388457491993904,
+      "normal_n": 248
+    },
+    "dino_pca99": {
+      "center": 0.012511864304542542,
+      "scale": 0.006388457491993904,
+      "normal_n": 248
+    },
+    "dino_memory64": {
+      "center": 0.02788984775543213,
+      "scale": 0.014176890254020691,
+      "normal_n": 248
+    },
+    "dino_memory256": {
+      "center": 0.027184128761291504,
+      "scale": 0.015531420707702637,
+      "normal_n": 248
+    },
+    "patch_pca95": {
+      "center": 531.3011779785156,
+      "scale": 91.86387634277344,
+      "normal_n": 248
+    },
+    "patch_pca95_roi": {
+      "center": 515.552978515625,
+      "scale": 87.80377197265625,
+      "normal_n": 248
+    },
+    "patch_pca99": {
+      "center": 410.947021484375,
+      "scale": 67.51466369628906,
+      "normal_n": 248
+    },
+    "patch_pca99_roi": {
+      "center": 411.6279296875,
+      "scale": 81.2530517578125,
+      "normal_n": 248
+    },
+    "patch_memory128": {
+      "center": 0.24643318355083466,
+      "scale": 0.040607839822769165,
+      "normal_n": 248
+    },
+    "patch_memory128_roi": {
+      "center": 0.2481009066104889,
+      "scale": 0.06055121123790741,
+      "normal_n": 248
+    },
+    "clip_dae_s0": {
+      "center": 0.19039271771907806,
+      "scale": 0.11475009471178055,
+      "normal_n": 248
+    },
+    "clip_gru_s0": {
+      "center": 0.4848311245441437,
+      "scale": 0.193352567304912,
+      "normal_n": 248
+    },
+    "dino_dae_s0": {
+      "center": 0.21845657378435135,
+      "scale": 0.10792399942874908,
+      "normal_n": 248
+    },
+    "dino_gru_s0": {
+      "center": 0.47239382565021515,
+      "scale": 0.2417954410854092,
+      "normal_n": 248
+    },
+    "clip_dae_s1": {
+      "center": 0.19307715445756912,
+      "scale": 0.11991291120648384,
+      "normal_n": 248
+    },
+    "clip_gru_s1": {
+      "center": 0.4789874255657196,
+      "scale": 0.19593282043933868,
+      "normal_n": 248
+    },
+    "dino_dae_s1": {
+      "center": 0.2165553793311119,
+      "scale": 0.10607260465621948,
+      "normal_n": 248
+    },
+    "dino_gru_s1": {
+      "center": 0.4744472801685333,
+      "scale": 0.24800409082887256,
+      "normal_n": 248
+    },
+    "clip_dae_s2": {
+      "center": 0.1959892064332962,
+      "scale": 0.1087961457669735,
+      "normal_n": 248
+    },
+    "clip_gru_s2": {
+      "center": 0.49008624255657196,
+      "scale": 0.19212400168180466,
+      "normal_n": 248
+    },
+    "dino_dae_s2": {
+      "center": 0.21874027699232101,
+      "scale": 0.10617614910006523,
+      "normal_n": 248
+    },
+    "dino_gru_s2": {
+      "center": 0.47805723547935486,
+      "scale": 0.2820086441408596,
+      "normal_n": 248
+    }
+  },
+  "pca_models": {
+    "clip_pca95": {
+      "normal_fit_n": 822,
+      "rank": 64,
+      "max_rank": 64,
+      "feature_dim": 512
+    },
+    "clip_pca99": {
+      "normal_fit_n": 822,
+      "rank": 64,
+      "max_rank": 64,
+      "feature_dim": 512
+    },
+    "dino_pca95": {
+      "normal_fit_n": 822,
+      "rank": 64,
+      "max_rank": 64,
+      "feature_dim": 384
+    },
+    "dino_pca99": {
+      "normal_fit_n": 822,
+      "rank": 64,
+      "max_rank": 64,
+      "feature_dim": 384
+    },
+    "patch_pca95": {
+      "normal_fit_patches": 20000,
+      "rank": 48,
+      "max_rank": 64,
+      "source": "actual frozen DINO intermediate patches"
+    },
+    "patch_pca99": {
+      "normal_fit_patches": 20000,
+      "rank": 64,
+      "max_rank": 64,
+      "source": "actual frozen DINO intermediate patches"
+    }
+  },
+  "VLM_components": {
+    "base": {
+      "direct_state_observations_on_dense_grid": 312,
+      "normal_semantic_calibration_n": 17,
+      "phase_teacher_counts": {
+        "0": 8,
+        "1": 12,
+        "2": 17,
+        "3": 35
+      },
+      "expanded_normal_phase_PSEUDO_counts": {
+        "0": 121,
+        "1": 143,
+        "2": 139,
+        "3": 419
+      },
+      "phase_guard_trusted_observations": 189,
+      "phase_scale": {
+        "0": [
+          0.011570930480957031,
+          0.008021177724003792
+        ],
+        "1": [
+          0.0177598986774683,
+          0.009350343607366085
+        ],
+        "2": [
+          0.02555011212825775,
+          0.010608186013996601
+        ],
+        "3": [
+          0.023202352225780487,
+          0.008344030007719994
+        ]
+      },
+      "phase_labels_human_verified": false,
+      "phase_pseudo_labels_are_direct_vlm": false,
+      "semantic_scale": {
+        "center": 0.23433603526799685,
+        "scale": 1.0,
+        "normal_n": 17
+      },
+      "dwell_scale": {
+        "center": 0.0,
+        "scale": 1.0,
+        "normal_n": 17
+      },
+      "process": {
+        "gap_edges_original_frames": [
+          16,
+          64,
+          128,
+          256
+        ],
+        "counts": [
+          [
+            [
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              5
+            ]
+          ],
+          [
+            [
+              5,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              4,
+              3,
+              1
+            ],
+            [
+              0,
+              2,
+              3,
+              7
+            ],
+            [
+              0,
+              3,
+              5,
+              18
+            ]
+          ],
+          [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        ],
+        "transition_probabilities": [
+          [
+            [
+              0.7666666666666666,
+              0.16666666666666666,
+              0.03333333333333333,
+              0.03333333333333333
+            ],
+            [
+              0.020833333333333332,
+              0.1875,
+              0.7291666666666666,
+              0.0625
+            ],
+            [
+              0.007518796992481203,
+              0.03759398496240601,
+              0.3684210526315789,
+              0.5864661654135339
+            ],
+            [
+              0.0027777777777777775,
+              0.125,
+              0.24166666666666664,
+              0.6305555555555555
+            ]
+          ],
+          [
+            [
+              0.7,
+              0.2777777777777778,
+              0.011111111111111112,
+              0.011111111111111112
+            ],
+            [
+              0.008333333333333333,
+              0.475,
+              0.39166666666666666,
+              0.125
+            ],
+            [
+              0.0037593984962406013,
+              0.16165413533834586,
+              0.2556390977443609,
+              0.5789473684210525
+            ],
+            [
+              0.000992063492063492,
+              0.11607142857142858,
+              0.19345238095238096,
+              0.6894841269841271
+            ]
+          ],
+          [
+            [
+              0.65,
+              0.25,
+              0.05,
+              0.05
+            ],
+            [
+              0.041666666666666664,
+              0.375,
+              0.4583333333333333,
+              0.125
+            ],
+            [
+              0.02631578947368421,
+              0.13157894736842105,
+              0.2894736842105263,
+              0.5526315789473685
+            ],
+            [
+              0.013888888888888888,
+              0.125,
+              0.20833333333333334,
+              0.6527777777777778
+            ]
+          ],
+          [
+            [
+              0.65,
+              0.25,
+              0.05,
+              0.05
+            ],
+            [
+              0.041666666666666664,
+              0.375,
+              0.4583333333333333,
+              0.125
+            ],
+            [
+              0.02631578947368421,
+              0.13157894736842105,
+              0.2894736842105263,
+              0.5526315789473685
+            ],
+            [
+              0.013888888888888888,
+              0.125,
+              0.20833333333333334,
+              0.6527777777777778
+            ]
+          ],
+          [
+            [
+              0.65,
+              0.25,
+              0.05,
+              0.05
+            ],
+            [
+              0.041666666666666664,
+              0.375,
+              0.4583333333333333,
+              0.125
+            ],
+            [
+              0.02631578947368421,
+              0.13157894736842105,
+              0.2894736842105263,
+              0.5526315789473685
+            ],
+            [
+              0.013888888888888888,
+              0.125,
+              0.20833333333333334,
+              0.6527777777777778
+            ]
+          ]
+        ],
+        "dwell_original_frames_q95": {
+          "1": 44.0,
+          "2": 32.0,
+          "3": 78.0
+        },
+        "dwell_normal_observations": {
+          "0": 2,
+          "1": 6,
+          "2": 12,
+          "3": 11
+        },
+        "dwell_human_verified": false,
+        "cadence": "binned sparse VLM evidence;not fully dense semantic inference"
+      },
+      "objects": "actual original GDINO/crop residual at cached evidence sites only;not dense re-extraction"
+    },
+    "reference": {
+      "direct_state_observations_on_dense_grid": 312,
+      "normal_semantic_calibration_n": 17,
+      "phase_teacher_counts": {
+        "0": 12,
+        "1": 15,
+        "2": 8,
+        "3": 37
+      },
+      "expanded_normal_phase_PSEUDO_counts": {
+        "0": 138,
+        "1": 144,
+        "2": 98,
+        "3": 442
+      },
+      "phase_guard_trusted_observations": 195,
+      "phase_scale": {
+        "0": [
+          0.013282418251037598,
+          0.008328116498887539
+        ],
+        "1": [
+          0.018952906131744385,
+          0.012784097343683243
+        ],
+        "2": [
+          0.028719130903482437,
+          0.008556673303246498
+        ],
+        "3": [
+          0.023199185729026794,
+          0.008778753690421581
+        ]
+      },
+      "phase_labels_human_verified": false,
+      "phase_pseudo_labels_are_direct_vlm": false,
+      "semantic_scale": {
+        "center": 0.32023346136551606,
+        "scale": 1.0,
+        "normal_n": 17
+      },
+      "dwell_scale": {
+        "center": 0.0,
+        "scale": 1.0,
+        "normal_n": 17
+      },
+      "process": {
+        "gap_edges_original_frames": [
+          16,
+          64,
+          128,
+          256
+        ],
+        "counts": [
+          [
+            [
+              2,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              3,
+              1,
+              1
+            ],
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              6
+            ]
+          ],
+          [
+            [
+              6,
+              3,
+              0,
+              1
+            ],
+            [
+              0,
+              5,
+              3,
+              2
+            ],
+            [
+              0,
+              2,
+              3,
+              2
+            ],
+            [
+              1,
+              1,
+              0,
+              24
+            ]
+          ],
+          [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        ],
+        "transition_probabilities": [
+          [
+            [
+              0.8035714285714286,
+              0.125,
+              0.017857142857142856,
+              0.05357142857142857
+            ],
+            [
+              0.008403361344537815,
+              0.5714285714285714,
+              0.21848739495798317,
+              0.20168067226890754
+            ],
+            [
+              0.03333333333333333,
+              0.16666666666666666,
+              0.6333333333333333,
+              0.16666666666666666
+            ],
+            [
+              0.11388888888888889,
+              0.11388888888888889,
+              0.0027777777777777775,
+              0.7694444444444445
+            ]
+          ],
+          [
+            [
+              0.6011904761904762,
+              0.2916666666666667,
+              0.005952380952380952,
+              0.10119047619047618
+            ],
+            [
+              0.004901960784313725,
+              0.5,
+              0.29411764705882354,
+              0.20098039215686272
+            ],
+            [
+              0.011111111111111112,
+              0.2777777777777778,
+              0.43333333333333335,
+              0.2777777777777778
+            ],
+            [
+              0.040674603174603176,
+              0.040674603174603176,
+              0.000992063492063492,
+              0.9176587301587301
+            ]
+          ],
+          [
+            [
+              0.6071428571428571,
+              0.25,
+              0.03571428571428571,
+              0.10714285714285714
+            ],
+            [
+              0.029411764705882353,
+              0.5,
+              0.2647058823529412,
+              0.20588235294117646
+            ],
+            [
+              0.05,
+              0.25,
+              0.45,
+              0.25
+            ],
+            [
+              0.06944444444444445,
+              0.06944444444444445,
+              0.013888888888888888,
+              0.8472222222222222
+            ]
+          ],
+          [
+            [
+              0.6071428571428571,
+              0.25,
+              0.03571428571428571,
+              0.10714285714285714
+            ],
+            [
+              0.029411764705882353,
+              0.5,
+              0.2647058823529412,
+              0.20588235294117646
+            ],
+            [
+              0.05,
+              0.25,
+              0.45,
+              0.25
+            ],
+            [
+              0.06944444444444445,
+              0.06944444444444445,
+              0.013888888888888888,
+              0.8472222222222222
+            ]
+          ],
+          [
+            [
+              0.6071428571428571,
+              0.25,
+              0.03571428571428571,
+              0.10714285714285714
+            ],
+            [
+              0.029411764705882353,
+              0.5,
+              0.2647058823529412,
+              0.20588235294117646
+            ],
+            [
+              0.05,
+              0.25,
+              0.45,
+              0.25
+            ],
+            [
+              0.06944444444444445,
+              0.06944444444444445,
+              0.013888888888888888,
+              0.8472222222222222
+            ]
+          ]
+        ],
+        "dwell_original_frames_q95": {
+          "0": 74.19999999999999,
+          "1": 50.8,
+          "2": 45.599999999999994,
+          "3": 222.79999999999995
+        },
+        "dwell_normal_observations": {
+          "0": 4,
+          "1": 7,
+          "2": 4,
+          "3": 4
+        },
+        "dwell_human_verified": false,
+        "cadence": "binned sparse VLM evidence;not fully dense semantic inference"
+      },
+      "objects": "actual original GDINO/crop residual at cached evidence sites only;not dense re-extraction"
+    }
+  },
+  "candidate_weights_fixed_before_metrics": true,
+  "candidate_names": [
+    "clip_dae_s0",
+    "clip_dae_s1",
+    "clip_dae_s2",
+    "clip_gru_s0",
+    "clip_gru_s1",
+    "clip_gru_s2",
+    "clip_memory64",
+    "clip_pca95",
+    "clip_pca99",
+    "clip_temporal_ema_s0",
+    "clip_temporal_ema_s1",
+    "clip_temporal_ema_s2",
+    "clip_temporal_s0",
+    "clip_temporal_s1",
+    "clip_temporal_s2",
+    "dino_dae_s0",
+    "dino_dae_s1",
+    "dino_dae_s2",
+    "dino_gru_s0",
+    "dino_gru_s1",
+    "dino_gru_s2",
+    "dino_memory256",
+    "dino_memory64",
+    "dino_patch_temporal_ema_s0",
+    "dino_patch_temporal_ema_s1",
+    "dino_patch_temporal_ema_s2",
+    "dino_patch_temporal_s0",
+    "dino_patch_temporal_s1",
+    "dino_patch_temporal_s2",
+    "dino_pca95",
+    "dino_pca99",
+    "dino_temporal_ema_s0",
+    "dino_temporal_ema_s1",
+    "dino_temporal_ema_s2",
+    "dino_temporal_s0",
+    "dino_temporal_s1",
+    "dino_temporal_s2",
+    "patch_memory128",
+    "patch_memory128_roi",
+    "patch_pca95",
+    "patch_pca95_roi",
+    "patch_pca99",
+    "patch_pca99_roi",
+    "vlm_base_clip_pca99",
+    "vlm_base_dino_pca99",
+    "vlm_base_full_ema_s0",
+    "vlm_base_full_ema_s1",
+    "vlm_base_full_ema_s2",
+    "vlm_base_full_s0",
+    "vlm_base_full_s1",
+    "vlm_base_full_s2",
+    "vlm_base_gap_dwell",
+    "vlm_base_gap_process",
+    "vlm_base_no_phase_ema_s0",
+    "vlm_base_no_phase_ema_s1",
+    "vlm_base_no_phase_ema_s2",
+    "vlm_base_no_phase_s0",
+    "vlm_base_no_phase_s1",
+    "vlm_base_no_phase_s2",
+    "vlm_base_patch_memory128",
+    "vlm_base_patch_pca99",
+    "vlm_base_patch_pca99_roi",
+    "vlm_base_phase_guard",
+    "vlm_base_phase_hard",
+    "vlm_reference_clip_pca99",
+    "vlm_reference_dino_pca99",
+    "vlm_reference_full_ema_s0",
+    "vlm_reference_full_ema_s1",
+    "vlm_reference_full_ema_s2",
+    "vlm_reference_full_s0",
+    "vlm_reference_full_s1",
+    "vlm_reference_full_s2",
+    "vlm_reference_gap_dwell",
+    "vlm_reference_gap_process",
+    "vlm_reference_no_phase_ema_s0",
+    "vlm_reference_no_phase_ema_s1",
+    "vlm_reference_no_phase_ema_s2",
+    "vlm_reference_no_phase_s0",
+    "vlm_reference_no_phase_s1",
+    "vlm_reference_no_phase_s2",
+    "vlm_reference_patch_memory128",
+    "vlm_reference_patch_pca99",
+    "vlm_reference_patch_pca99_roi",
+    "vlm_reference_phase_guard",
+    "vlm_reference_phase_hard"
+  ],
+  "test_metrics_computed": false,
+  "fresh_paid_api_calls_for_this_suite": 0,
+  "dense_phase_state_inference_claimed": false,
+  "human_verified": false,
+  "existing_models_overwritten": false
+}

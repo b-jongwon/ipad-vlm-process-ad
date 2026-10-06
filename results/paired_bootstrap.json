@@ -1,0 +1,58 @@
+[
+  {
+    "left": "vlm_dense_reference_object_ema_seed_mean",
+    "right": "dense_object_ema_seed_mean",
+    "observed_macro_AUROC_delta": 0.0013568019526121744,
+    "recording_bootstrap_percentile95": [
+      -0.0007915165448459854,
+      0.003446699189766087
+    ],
+    "requested_iterations": 500,
+    "valid_iterations": 500,
+    "unit": "recording;resampled independently within scenes",
+    "test_previously_inspected": true,
+    "inference": "descriptive;not independent confirmation;not multiple-comparison adjusted"
+  },
+  {
+    "left": "vlm_reference_full_ema_seed_mean",
+    "right": "vlm_reference_full_process_removed_ema_seed_mean",
+    "observed_macro_AUROC_delta": 0.0013430256078728608,
+    "recording_bootstrap_percentile95": [
+      -0.00014756319737956324,
+      0.0031556843753449146
+    ],
+    "requested_iterations": 500,
+    "valid_iterations": 500,
+    "unit": "recording;resampled independently within scenes",
+    "test_previously_inspected": true,
+    "inference": "descriptive;not independent confirmation;not multiple-comparison adjusted"
+  },
+  {
+    "left": "dense_object_ema_seed_mean",
+    "right": "dino_patch_temporal_ema_seed_mean",
+    "observed_macro_AUROC_delta": -0.012351781090970126,
+    "recording_bootstrap_percentile95": [
+      -0.059966031766608176,
+      0.021879400192453612
+    ],
+    "requested_iterations": 500,
+    "valid_iterations": 500,
+    "unit": "recording;resampled independently within scenes",
+    "test_previously_inspected": true,
+    "inference": "descriptive;not independent confirmation;not multiple-comparison adjusted"
+  },
+  {
+    "left": "dense_object_motion_ema_seed_mean",
+    "right": "dense_object_ema_seed_mean",
+    "observed_macro_AUROC_delta": -0.034721988883049726,
+    "recording_bootstrap_percentile95": [
+      -0.07787620881836904,
+      0.0006048899277848198
+    ],
+    "requested_iterations": 500,
+    "valid_iterations": 500,
+    "unit": "recording;resampled independently within scenes",
+    "test_previously_inspected": true,
+    "inference": "descriptive;not independent confirmation;not multiple-comparison adjusted"
+  }
+]

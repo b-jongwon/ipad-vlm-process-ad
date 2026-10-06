@@ -1,0 +1,164 @@
+{
+  "scene": "R04",
+  "encoder": "dino",
+  "kind": "gru",
+  "seed": 0,
+  "max_epochs": 40,
+  "epochs_executed": 29,
+  "best_epoch": 23,
+  "selection": "normal TUNE only",
+  "fit_observations": 686,
+  "tune_observations": 134,
+  "history": [
+    {
+      "epoch": 1,
+      "normal_fit_loss": 0.9351051350434622,
+      "normal_tune_loss": 0.8192852735519409
+    },
+    {
+      "epoch": 2,
+      "normal_fit_loss": 0.8679609596729279,
+      "normal_tune_loss": 0.759517252445221
+    },
+    {
+      "epoch": 3,
+      "normal_fit_loss": 0.7824807564417521,
+      "normal_tune_loss": 0.6983239054679871
+    },
+    {
+      "epoch": 4,
+      "normal_fit_loss": 0.7073759833971659,
+      "normal_tune_loss": 0.6571331024169922
+    },
+    {
+      "epoch": 5,
+      "normal_fit_loss": 0.6510295768578848,
+      "normal_tune_loss": 0.6285574436187744
+    },
+    {
+      "epoch": 6,
+      "normal_fit_loss": 0.609790196021398,
+      "normal_tune_loss": 0.6047738790512085
+    },
+    {
+      "epoch": 7,
+      "normal_fit_loss": 0.5794494946797689,
+      "normal_tune_loss": 0.5919963717460632
+    },
+    {
+      "epoch": 8,
+      "normal_fit_loss": 0.5541592737038931,
+      "normal_tune_loss": 0.5733532905578613
+    },
+    {
+      "epoch": 9,
+      "normal_fit_loss": 0.5322071413199106,
+      "normal_tune_loss": 0.5658549666404724
+    },
+    {
+      "epoch": 10,
+      "normal_fit_loss": 0.51246910293897,
+      "normal_tune_loss": 0.5525693893432617
+    },
+    {
+      "epoch": 11,
+      "normal_fit_loss": 0.4949203282594681,
+      "normal_tune_loss": 0.5417842268943787
+    },
+    {
+      "epoch": 12,
+      "normal_fit_loss": 0.47927763561407727,
+      "normal_tune_loss": 0.5328512787818909
+    },
+    {
+      "epoch": 13,
+      "normal_fit_loss": 0.46504244208335876,
+      "normal_tune_loss": 0.5252704620361328
+    },
+    {
+      "epoch": 14,
+      "normal_fit_loss": 0.4525293211142222,
+      "normal_tune_loss": 0.5213207602500916
+    },
+    {
+      "epoch": 15,
+      "normal_fit_loss": 0.44178664187590283,
+      "normal_tune_loss": 0.5128747224807739
+    },
+    {
+      "epoch": 16,
+      "normal_fit_loss": 0.43084431687990826,
+      "normal_tune_loss": 0.5087265968322754
+    },
+    {
+      "epoch": 17,
+      "normal_fit_loss": 0.42061521609624225,
+      "normal_tune_loss": 0.5028414726257324
+    },
+    {
+      "epoch": 18,
+      "normal_fit_loss": 0.4112665702899297,
+      "normal_tune_loss": 0.49868500232696533
+    },
+    {
+      "epoch": 19,
+      "normal_fit_loss": 0.4023900826772054,
+      "normal_tune_loss": 0.49765172600746155
+    },
+    {
+      "epoch": 20,
+      "normal_fit_loss": 0.3940282315015793,
+      "normal_tune_loss": 0.491868257522583
+    },
+    {
+      "epoch": 21,
+      "normal_fit_loss": 0.38605284690856934,
+      "normal_tune_loss": 0.4932191073894501
+    },
+    {
+      "epoch": 22,
+      "normal_fit_loss": 0.37808337310949963,
+      "normal_tune_loss": 0.4934568703174591
+    },
+    {
+      "epoch": 23,
+      "normal_fit_loss": 0.3712783505519231,
+      "normal_tune_loss": 0.48692992329597473
+    },
+    {
+      "epoch": 24,
+      "normal_fit_loss": 0.3646080295244853,
+      "normal_tune_loss": 0.49426910281181335
+    },
+    {
+      "epoch": 25,
+      "normal_fit_loss": 0.3578028529882431,
+      "normal_tune_loss": 0.48905259370803833
+    },
+    {
+      "epoch": 26,
+      "normal_fit_loss": 0.3520713498195012,
+      "normal_tune_loss": 0.4933001399040222
+    },
+    {
+      "epoch": 27,
+      "normal_fit_loss": 0.3458947589000066,
+      "normal_tune_loss": 0.49085479974746704
+    },
+    {
+      "epoch": 28,
+      "normal_fit_loss": 0.3401153087615967,
+      "normal_tune_loss": 0.49268537759780884
+    },
+    {
+      "epoch": 29,
+      "normal_fit_loss": 0.33473122119903564,
+      "normal_tune_loss": 0.49684345722198486
+    }
+  ],
+  "cal_test_used_for_stopping": false,
+  "context_observations": 8,
+  "cold_start": "normal CAL median until8past observations",
+  "wall_seconds_this_execution": 0.6172612999980629,
+  "pretrained_backbone_weights_updated": false
+}
